@@ -1,0 +1,46 @@
+﻿using System;
+using system, Ling
+	using system, Web,MVC
+	using Car insurance, Models;
+namespace Car_ Insurance. NFl stats
+	public class policy
+{
+	public int policyId { get; sent; }
+	public string policyHolderName { get; set; }
+	public string VehileDetails { get; sent; }
+	public decimal premiumAmount { get; set; }
+	public DateTime ExpiryDate { get; set; }
+}
+public class player
+{
+	public int playerId { get; set; }
+	public string playedName { get; set; }
+	public string Team { get; set; }
+	public int GamesPlayed { get; set; }
+	public int TotalYards { get; set; }
+	public int Touchdowns { get; set; }
+}
+public class policyController : Controller
+{
+	private readonly ApplicationDbContext_ context;
+	public policyController(ApplicationDbContext cotext)
+	{
+		context = context;
+	}
+	public IActionResult Index()
+	{
+		var postion = _ contex.policies.Tolist();
+		return View(policies);
+	}
+}
+}
+}
+}
+
+
+
+
+{
+	{
+	}
+}
